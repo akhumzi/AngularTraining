@@ -5,17 +5,20 @@ import { FormsModule } from '@angular/forms'; // new line added, explanation say
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroesDetailsComponent } from './heroes-details/heroes-details.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroesDetailsComponent
+    HeroesDetailsComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule, 
-    FormsModule
+    FormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
