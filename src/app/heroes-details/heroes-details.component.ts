@@ -7,8 +7,8 @@ import { HeroService } from '../hero.service';
  
 @Component({
   selector: 'app-hero-detail',
-  templateUrl: './hero-detail.component.html',
-  styleUrls: [ './hero-detail.component.css' ]
+  templateUrl: './heroes-details.component.html',
+  styleUrls: [ './heroes-details.component.css' ]
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
@@ -20,7 +20,7 @@ export class HeroDetailComponent implements OnInit {
   ) {}
  
   ngOnInit(): void {
-    this.getHero();
+    this.getHero()
   }
  
   getHero(): void {
